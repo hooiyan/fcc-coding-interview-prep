@@ -7,3 +7,15 @@ Symmetric difference is a binary operation, which means it operates on only two 
 ---
 
 Create a function that takes two or more arrays and returns an array of their symmetric difference. The returned array must contain only unique values (no duplicates).
+
+---
+
+## My logic
+
+1. Check if the first index in `outerArray1` matches the first index in `outerArray2`
+2. Proceed to the next index in `outerArray2`
+3. Repeat the comparison of each remaining index in `outerArray2`
+4. When the comparison is done, return the `finalResult` of the first round
+5. If there are more arrays, more comparisons need to be done. Take the previous `finalResult` and repeat the comparison with the next array
+6. Repeat the steps until no more arrays left
+7. The `finalResult` is the last result that we get from the last round of comparison
