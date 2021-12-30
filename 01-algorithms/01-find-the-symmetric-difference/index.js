@@ -7,6 +7,7 @@ function sym(...args) {
 
   for(let i = 0; i < argsLength; i++) {
 
+    console.log(`array ${i}`)
     for (let j = 0; j < outerArray[i].length; j++) {
       // const innerArr = outerArray[i][j]
       // console.log(innerArray)
@@ -17,8 +18,8 @@ function sym(...args) {
 
       // } 
 
-      console.log(outerArray[array1Index][j])
-      console.log(outerArray[array2Index][j])
+      console.log(outerArray[outerArray1Index][j])
+      console.log(outerArray[outerArray2Index][j])
     }
 
     console.log("---")
